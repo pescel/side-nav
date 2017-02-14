@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>React Time</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,minimum-scale=1'>
+  <meta name='theme-color' content='#EA2663'>
+  <title>Side Nav</title>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <link href='/lib/styles.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="application"></div>
-  <script src="main.bundle.js"></script>
+  <div class='header'>
+    <button class='js-menu-show_menu-toggle material-icons'>
+      menu
+    </button>
+  </div>
+  <aside class='js-side-nav side-nav'>
+    <nav class='js-side-nav-container side-nav__container'>
+      <button class='js-menu-hide side-nav__hide material-icons'>
+        close
+      </button>
+      <header class='side-nav_header'>
+        Side Nav
+      </header>
+      <ul class='side-nav_content'>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+      </ul>
+    </nav>
+  </aside>
+  <script src='./lib/detabinator.js'></script>
+  <script src='./lib/side-nav.js'></script>
 </body>
 </html>
